@@ -1,0 +1,96 @@
+.header-contacto{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+            h1{
+                font-family: fuentepagina;
+                letter-spacing: 3px;
+                display: inline-block;
+                position: relative;
+                font-family: fuentepagina;
+                color: black;
+                letter-spacing: 3px;
+                font-weight: bolder;
+
+                    &::after,&::before{
+                    content:'';
+                    position: absolute;
+                    width: 120px;
+                    height: 3px;
+                    background-color: black;
+                    top: 0.6em;
+                    }
+                    &::before{
+                    left: -140px;
+                    }
+                    &::after{
+                        right: -140px;
+                    }
+            }
+            
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "caca1 caca2";
+
+    .contacto-container{
+        grid-column-start: caca1;
+        grid-column-end: caca1;
+
+        ul{
+            font-family: fuentepagina;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+            list-style-type: none;
+            
+
+            img{
+                padding-right: 15px;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+.map{
+    grid-column-start: caca1;
+    grid-column-end: caca1;
+    padding-left: 20px;
+}
+
+.contacto-container2{
+    grid-column-start: caca2;
+    grid-column-end: caca2;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+    }
+}
+
+.shadow2{
+    padding-top: 30px;
+    border-bottom: 1px solid #b8b6b6;
+    box-shadow:  0 2px 2px 0 rgba(50,50,50,0.15);
+}
+
+
+/*MEDIA A 768PX*/
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "contacto"
+            "mapa"; 
+    }
+}

@@ -1,0 +1,15 @@
+.iniciarsesion-containter{
+    margin-top: 40px;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: fuentepagina;
+        font-weight: bold;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #b8b6b6;
+        box-shadow:  0 2px 2px 0 rgba(50,50,50,0.15);
+    }
+}

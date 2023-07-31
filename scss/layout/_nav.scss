@@ -1,0 +1,144 @@
+.barranegra{
+        p{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: fuentepagina;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+    }        
+
+    .inicuen{
+        font-family: fuentepagina;
+        color: black;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 15px;
+        list-style: none;
+        border-bottom: 1px solid #b8b6b6;
+        li:last-child{
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black; 
+            &:hover{
+                font-weight: bold;
+            }
+        }
+
+    }
+
+
+.header{
+    font-family: fuentepagina;
+    font-size: 35px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b8b6b6;
+    box-shadow:  0 2px 2px 0 rgba(50,50,50,0.15);
+    
+    .logo{
+        padding-bottom: 10px;
+
+            h1{
+                font-size: 60px !important;
+                font-weight: bolder;
+            }
+
+    }
+
+.navi{
+    font-family: fuentepagina;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+    padding-left: 40px;
+
+    li:not(:last-child):hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+}
+
+}
+.search-form{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+/*MEDIA A 768*/
+
+@media (max-width: 768px) {
+  .barranegra {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .header .logo h1 {
+        font-size: 40px !important;
+    }
+
+    .header .navi {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .search-form {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+
+/*MEDIA A 425*/
+
+@media (max-width: 425px) {
+    .header {
+      flex-direction: column; /* Cambiamos a columna para apilar los elementos verticalmente */
+      text-align: center; /* Centramos horizontalmente el texto */
+      padding-left: 0; /* Quitamos el padding izquierdo para centrar los enlaces */
+    }
+  
+    .header .logo h1 {
+      font-size: 40px; /* Reducimos el tamaño de fuente del logo */
+    }
+  
+    .header .navi {
+      flex-direction: column; /* Cambiamos a columna para apilar los enlaces verticalmente */
+      gap: 1rem; /* Espaciado entre los enlaces */
+      padding-left: 0; /* Quitamos el padding izquierdo para centrar los enlaces */
+    }
+  }
