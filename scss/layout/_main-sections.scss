@@ -222,3 +222,79 @@
         height: 300px; 
     }
 }
+
+
+/*MEDIA A 375*/
+@media (max-width: 375px) {
+    .destacados1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 18px;
+            letter-spacing: 1.5px;
+
+            &::before,
+            &::after {
+                width: 80px;
+            }
+
+            &::before {
+                left: -90px;
+            }
+
+            &::after {
+                right: -90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .seguinos-linea {
+        margin-top: 30px;
+
+        h1 {
+            font-size: 18px;
+            letter-spacing: 1.5px;
+
+            &::before,
+            &::after {
+                width: 80px;
+            }
+
+            &::before {
+                left: -90px;
+            }
+
+            &::after {
+                right: -90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .enviamos-container {
+        flex-direction: column;
+        align-items: center; 
+        padding-bottom: 10px;
+        border-bottom: none;
+        box-shadow: none;
+
+        img {
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+
