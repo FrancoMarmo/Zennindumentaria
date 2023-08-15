@@ -47,12 +47,7 @@
 }
      
 .p-container{
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-auto-rows: 500px;
-    padding: 30px;
-    grid-gap: 20px;
-    justify-content: center;
+    @include cards
 
     .p-item{
         position: relative;
@@ -83,7 +78,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        background-color: #e7e5e5;
+        background-color: $colortexto;
         border-radius: 20px;
 
 

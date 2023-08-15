@@ -127,18 +127,18 @@
 
 @media (max-width: 425px) {
     .header {
-      flex-direction: column; /* Cambiamos a columna para apilar los elementos verticalmente */
-      text-align: center; /* Centramos horizontalmente el texto */
-      padding-left: 0; /* Quitamos el padding izquierdo para centrar los enlaces */
+      flex-direction: column; 
+      text-align: center; 
+      padding-left: 0; 
     }
   
     .header .logo h1 {
-      font-size: 40px; /* Reducimos el tamaño de fuente del logo */
+      font-size: 40px; 
     }
   
     .header .navi {
-      flex-direction: column; /* Cambiamos a columna para apilar los enlaces verticalmente */
-      gap: 1rem; /* Espaciado entre los enlaces */
-      padding-left: 0; /* Quitamos el padding izquierdo para centrar los enlaces */
+      flex-direction: column; 
+      gap: 1rem; 
+      padding-left: 0; 
     }
   }
