@@ -1,63 +1,67 @@
-.productos-titulo{
+.productos-titulo {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 50px;
 
-            h2{
-                font-family: fuentepagina;
-                letter-spacing: 3px;
-                display: inline-block;
-                position: relative;
-                font-family: fuentepagina;
-                color: black;
-                letter-spacing: 3px;
-                font-weight: bolder;
+    h2 {
+        font-family: fuentepagina;
+        letter-spacing: 3px;
+        display: inline-block;
+        position: relative;
+        font-family: fuentepagina;
+        color: black;
+        letter-spacing: 3px;
+        font-weight: bolder;
 
-                    &::after,&::before{
-                    content:'';
-                    position: absolute;
-                    width: 120px;
-                    height: 3px;
-                    background-color: black;
-                    top: 0.6em;
-                    }
-                    &::before{
-                    left: -140px;
-                    }
-                    &::after{
-                        right: -140px;
-                    }
-            }
-            
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 3px;
+            background-color: black;
+            top: 0.6em;
+        }
+
+        &::before {
+            left: -140px;
+        }
+
+        &::after {
+            right: -140px;
+        }
+    }
+
 }
 
-.p-container-p{
+.p-container-p {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-auto-rows: 500px;
     padding: 30px;
-    grid-gap: 20px;
+    grid-gap: 35px;
     justify-content: center;
 
-    .p-item-p{
+    .p-item-p {
         position: relative;
         margin: 20px;
     }
 
-    .p-img-p{
+    .p-img-p {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 40px;
         transition: all 0.8s ease;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             transition: all 0.6s ease;
             filter: brightness(30%);
         }
     }
 
-    .p-title-p{
+    .p-title-p {
         position: absolute;
         bottom: 0px;
         color: black;
@@ -74,7 +78,7 @@
 
     }
 
-    .p-btn-p{
+    .p-btn-p {
         display: flex;
         flex-direction: row;
         justify-content: center !important;
@@ -93,28 +97,70 @@
         border: solid #2e2d2e 2px;
         background: #000000;
 
-        &:hover{
-         background: -webkit-gradient(linear, 0 0, 0 100%, from(#575757), to(#0a0a0a));
-         background: -moz-linear-gradient(top, #575757, #0a0a0a)
+        &:hover {
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#575757), to(#0a0a0a));
+            background: -moz-linear-gradient(top, #575757, #0a0a0a)
         }
     }
 }
 
 
-.shadow{
+.shadow {
     margin-top: 40px;
     border-bottom: 1px solid #b8b6b6;
-    box-shadow:  0 2px 2px 0 rgba(50,50,50,0.15);
+    box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.15);
+}
+
+.search-input {
+    width: 100%;
+}
+
+.p-container {
+    grid-gap: 15px;
+    padding: 0px;
+}
+
+.class {
+    display: flex;
+    justify-content: center;
 }
 
 
+/*MEDIA*/
+@media (max-width: 1040px) {
+    .p-container-p {
+        grid-template-columns: repeat(2, 300px);
 
-/*MEDIA A 768*/
+    }
+
+    .p-container-p .p-item-p {
+        margin: 10px;
+    }
+
+    .p-container-p .p-title-p {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 768px) {
     .p-container-p {
         grid-template-columns: repeat(2, 300px);
-        grid-gap: 15px;
+
+    }
+
+    .p-container-p .p-item-p {
+        margin: 10px;
+    }
+
+    .p-container-p .p-title-p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 608px) {
+    .p-container-p {
+        grid-template-columns: repeat(1, 300px);
+
     }
 
     .p-container-p .p-item-p {
@@ -128,11 +174,35 @@
 
 /*MEDIA A 425PX*/
 
-@media (max-width: 425px) {
+@media (max-width: 465px) {
     .p-container-p {
-      grid-template-columns: repeat(1, 1fr);
-      grid-auto-rows: auto;
-      padding: 15px;
-      grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        padding: 15px;
     }
-  }
+
+    .productos-titulo {
+        h2 {
+            font-size: 16px;
+            letter-spacing: 1px;
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 3px;
+                background-color: black;
+                top: 0.6em;
+            }
+
+            &::before {
+                left: -100px;
+            }
+
+            &::after {
+                right: -100px;
+            }
+        }
+    }
+}

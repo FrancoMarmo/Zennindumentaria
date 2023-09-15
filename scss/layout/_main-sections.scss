@@ -1,158 +1,168 @@
-.custom-carousel{
+.custom-carousel {
     width: 1090px;
     height: 500px;
     margin-top: 20px;
 
-        .custom-image{
-            width: 100%;
-            background-size: contain;
+    .custom-image {
+        width: 100%;
+        background-size: contain;
 
-                .custom-img-container{
-                    height: 500px;
-                }
+        .custom-img-container {
+            height: 500px;
         }
+    }
 }
 
-.destacados1{
+.destacados1 {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 50px;
 
-            h2{
-                font-family: fuentepagina;
-                letter-spacing: 3px;
-                display: inline-block;
-                position: relative;
-                font-family: fuentepagina;
-                color: black;
-                letter-spacing: 3px;
-                font-weight: bolder;
-
-                    &::after,&::before{
-                    content:'';
-                    position: absolute;
-                    width: 120px;
-                    height: 3px;
-                    background-color: black;
-                    top: 0.6em;
-                    }
-                    &::before{
-                    left: -140px;
-                    }
-                    &::after{
-                        right: -140px;
-                    }
-            }
-            
-}
-     
-.p-container{
-    @include cards
-
-    .p-item{
+    h2 {
+        font-family: fuentepagina;
+        letter-spacing: 3px;
+        display: inline-block;
         position: relative;
-        margin: 20px;
-    }
-
-    .p-img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 40px;
-        transition: all 0.8s ease;
-        cursor: pointer;
-        &:hover{
-            transition: all 0.6s ease;
-            filter: brightness(30%);
-        }
-    }
-
-    .p-title{
-        position: absolute;
-        bottom: 0px;
+        font-family: fuentepagina;
         color: black;
-        width: 100%;
-        margin: 0px;
-        padding: 5px;
-        font-family: fuentepagina;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        background-color: $colortexto;
-        border-radius: 20px;
+        letter-spacing: 3px;
+        font-weight: bolder;
 
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 3px;
+            background-color: black;
+            top: 0.6em;
+        }
 
+        &::before {
+            left: -140px;
+        }
+
+        &::after {
+            right: -140px;
+        }
     }
 
-    .p-btn{
-        display: flex;
-        flex-direction: row;
-        justify-content: center !important;
-        font-family: fuentepagina;
-        color: #ffffff;
-        font-size: 17px;
-        padding: 7px;
-        text-decoration: none;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-        -webkit-box-shadow: 0px 1px 5px #1f1d1f;
-        -moz-box-shadow: 0px 1px 5px #1f1d1f;
-        box-shadow: 0px 1px 5px #1f1d1f;
-        text-shadow: 1px 1px 3px #dedede;
-        border: solid #2e2d2e 2px;
-        background: #000000;
+}
 
-        &:hover{
-         background: -webkit-gradient(linear, 0 0, 0 100%, from(#575757), to(#0a0a0a));
-         background: -moz-linear-gradient(top, #575757, #0a0a0a)
-        }
+.p-container {
+    @include cards;
+}
+
+.p-item {
+    position: relative;
+    margin: 20px;
+}
+
+.p-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.6s ease;
+        filter: brightness(30%);
+    }
+}
+
+.p-title {
+    position: absolute;
+    bottom: 0px;
+    color: black;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    font-family: fuentepagina;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: $colortexto;
+    border-radius: 20px;
+
+
+}
+
+.p-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    font-family: fuentepagina;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px;
+    text-decoration: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 1px 5px #1f1d1f;
+    -moz-box-shadow: 0px 1px 5px #1f1d1f;
+    box-shadow: 0px 1px 5px #1f1d1f;
+    text-shadow: 1px 1px 3px #dedede;
+    border: solid #2e2d2e 2px;
+    background: #000000;
+
+    &:hover {
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#575757), to(#0a0a0a));
+        background: -moz-linear-gradient(top, #575757, #0a0a0a)
     }
 }
 
 
-.seguinos-linea{
+
+.seguinos-linea {
     text-align: center;
     margin-top: 60px;
 
-        h3{
-            display: inline-block;
-            position: relative;
-            font-family: fuentepagina;
-            color: black;
-            letter-spacing: 3px;
-            font-weight: bolder;
+    h3 {
+        display: inline-block;
+        position: relative;
+        font-family: fuentepagina;
+        color: black;
+        letter-spacing: 3px;
+        font-weight: bolder;
 
-            &::after,&::before{
-                content:'';
-                position: absolute;
-                width: 120px;
-                height: 3px;
-                background-color: black;
-                top: 0.6em;
-            }
-            &::before{
-                left: -140px;
-            }
-            &::after{
-                right: -140px;
-            }
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 3px;
+            background-color: black;
+            top: 0.6em;
         }
+
+        &::before {
+            left: -140px;
+        }
+
+        &::after {
+            right: -140px;
+        }
+    }
 }
 
-.logos-seguinos{
+.logos-seguinos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
 
-    a{
-        padding: 10px;}
-        cursor: pointer;
+    a {
+        padding: 10px;
     }
 
+    cursor: pointer;
+}
 
-.enviamos-container{
+
+.enviamos-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -162,13 +172,13 @@
     margin-top: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #b8b6b6;
-    box-shadow:  0 2px 2px 0 rgba(50,50,50,0.15);
+    box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.15);
 
-    img{
+    img {
         margin-right: 8px;
     }
 
-    h4{
+    h4 {
         font-family: fuentepagina;
         font-weight: bold;
         align-items: center;
@@ -179,7 +189,7 @@
 
 /*MEDIA A 768*/
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .p-container {
         grid-template-columns: repeat(2, 350px);
         justify-content: center;
@@ -188,33 +198,95 @@
 
 @media (max-width: 768px) {
     .custom-carousel {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
     }
 
     .custom-carousel .custom-image .custom-img-container {
-        height: 300px; 
+        height: 300px;
+    }
+}
+
+@media (max-width: 709px) {
+    .p-container {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .header .navi {
+        font-size: 25px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 
-
 /*MEDIA A 425*/
 
-@media (max-width: 425px) {
+@media (max-width: 490px) {
     .p-container {
         grid-template-columns: repeat(1, 100%);
+    }
+
+    .destacados1 {
+        h2 {
+            font-size: 16px;
+            letter-spacing: 1px;
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 3px;
+                background-color: black;
+                top: 0.6em;
+            }
+            &::before {
+                left: -100px;
+            }
+            &::after {
+                right: -100px;
+            }
+        }
+    }
+
+    .seguinos-linea {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 18px;
+            letter-spacing: 1.5px;
+
+            ::before,
+            &::after {
+                width: 80%;
+            }
+
+            &::before {
+                left: -90px;
+            }
+
+            &::after {
+                right: -90px;
+            }
+        }
     }
 }
 
 @media (max-width: 425px) {
     .custom-carousel {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
     }
 
     .custom-carousel .custom-image .custom-img-container {
-        height: 300px; 
+        height: 300px;
     }
 }
 
@@ -224,55 +296,19 @@
     .destacados1 {
         margin-top: 30px;
         margin-bottom: 20px;
-
-        h2 {
-            font-size: 18px;
-            letter-spacing: 1.5px;
-
-            &::before,
-            &::after {
-                width: 80px;
-            }
-
-            &::before {
-                left: -90px;
-            }
-
-            &::after {
-                right: -90px;
-            }
-        }
     }
 }
 
 @media (max-width: 375px) {
     .seguinos-linea {
         margin-top: 30px;
-
-        h3 {
-            font-size: 18px;
-            letter-spacing: 1.5px;
-
-            &::before,
-            &::after {
-                width: 80px;
-            }
-
-            &::before {
-                left: -90px;
-            }
-
-            &::after {
-                right: -90px;
-            }
-        }
     }
 }
 
 @media (max-width: 375px) {
     .enviamos-container {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         padding-bottom: 10px;
         border-bottom: none;
         box-shadow: none;
@@ -287,7 +323,6 @@
         }
     }
 }
-
 
 
 
